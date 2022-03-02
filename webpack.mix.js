@@ -30,8 +30,8 @@ mix
     ], 'public/front/assets/js/modernizr.js')
 
     .scripts([
-        'resources/views/front/assets/js/respond.min.js',
-    ], 'public/front/assets/js/respond.min.js')
+        'resources/views/front/assets/js/respond.js',
+    ], 'public/front/assets/js/respond.js')
 
     .scripts([
         'resources/views/front/assets/js/jquery.min.js',

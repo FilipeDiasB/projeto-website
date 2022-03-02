@@ -14,7 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'webController@home')->name('home');
-Route::get('/cursos', 'webController@courses')->name('courses');
+Route::get('/cursos', 'webController@courses')->name('course');
 Route::get('/blog', 'webController@blog')->name('blog');
-Route::get('/artigos', 'webController@articles')->name('articles');
+Route::get('/blog/{uri}', 'webController@article')->name('article');
 Route::get('/contatos', 'webController@contact')->name('contact');
+
+Route::post('/send-email', 'webController@sendMail')->name('send-mail');
